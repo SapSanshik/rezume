@@ -1,0 +1,258 @@
+body {
+    background-image: url(/img/backc.jpg);
+    background-repeat: none;
+    width: 1387px;
+
+}
+
+header {
+    width: 1660px;
+    height: 80px;
+}
+
+
+
+.menu_logo {
+    margin-left: 50px;
+}
+
+.menu_item {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 100px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.item {
+    margin-right: 40px;
+    list-style: none;
+}
+
+.content {
+    padding: 156px 0 0 0;
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+}
+
+.content__main  {
+    display: flex;
+}
+
+
+
+.box-1 {
+    width: 630px;
+    height: 242px;
+    border: 3px solid black;
+}
+
+.box-2 {
+    width: 629px;
+    height: 241px;
+    border: 3px solid #fff;
+    margin: 30px 0;
+}
+
+.box-3 {
+    margin-left: 580px;
+    width: 630px;
+    height: 242px;
+    border: 3px solid black;
+}
+
+.box-4 {
+    margin-left: 580px;
+    width: 629px;
+    height: 241px;
+    border: 3px solid #fff;
+    margin-top: 40px;
+}
+
+.footer {
+    padding-top: 150px;
+}
+
+.footer_menu {
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.cyberpunk, .cyberpunk::after {
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 30px;
+    flex-family: "Bebas neue" cursive;
+    background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00e6f6;
+    outline: transparent;
+    position: relative;
+}
+
+.cyberpunk::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+
+
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+    text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+    clip-path: var(--slice-0);
+}
+
+.cyberpunk:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+    
+}
+
+
+.logo {
+    position: absolute;
+    width: 1140px;
+    background-image: -webkit-image-set(png/124.jpg);
+}
+
+.logo__icon {
+    width: 200px;
+    height: 70px;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.socials .socials__item {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.socials .socials__item .socials__link {
+    text-decoration: none;
+}
+.socials .socials__item .socials__link .fa-brands {
+    font-size: 4em;
+    color: #222;
+}
+.socials .socials__item .socials__link::before {
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 4em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.socials .socials__item:nth-child(1) .socials__link::before {
+    content: "\f16d";
+    background-image: linear-gradient(45deg, 
+      #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,
+      #bc1888 100%);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #dc2743;
+}
+.socials .socials__item:nth-child(2) .socials__link::before {
+    content: "\f232";
+    color: #25D366;
+    border-bottom: 4px solid #25D366;
+}
+.socials .socials__item:nth-child(3) .socials__link::before {
+    content: "\f09b";
+    color: #ffffff;
+    border-bottom: 4px solid #000000;
+}
+.socials .socials__item:hover .socials__link::before {
+    height: 100%;
+}
