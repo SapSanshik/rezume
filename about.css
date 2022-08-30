@@ -2,12 +2,16 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background: url(img/Minimalist-Aesthetic-Wallpaper-Funny-Money.jpg) no-repeat center center;
+    background-size: 100% 100%;
 }
 
 header {
     background: url(img/fairy-sunrise-mountain-forest-landscape-morning.jpg) no-repeat center center;
+    background-size: 100%;
     height: 818px;
-    width: auto
+    width: auto;
+    margin-bottom: 0;
 }
 
 main li {
@@ -48,25 +52,34 @@ main li {
 
 .biography {
     height: 818px;
-    width: auto;
+    width: 1366px;
+    margin-top: 0;
 }
 
 .main__content {
     display: flex;
 }
 
+.glitch {
+    color: #000;
+}
+
 .content {
-    background-color: #000;
+   background-color: #b4a284;
     height: 818px;
     padding-top: 0;
+    padding-left: 10px;
     color: white;
+    width: 650px;
 }
 
 .conteiner {
-    background-color: #fff;
+    background-color: #ede3b9;
     height: 818px;
     padding-top: 0;
+    padding-left: 10px;
     color: #000;
+    width: 650px;
 }
 
 .footer {
