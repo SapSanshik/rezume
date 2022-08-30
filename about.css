@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background: url(img/Minimalist-Aesthetic-Wallpaper-Funny-Money.jpg) no-repeat center center;
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 header {
