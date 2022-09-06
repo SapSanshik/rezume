@@ -10,27 +10,79 @@
 
 </head>
 <body>
-   <header>
-    <ul class="header">
-        <li class="links">
-            <div class="header__links"><a href="index.html" class="logo">Главная</a></div>
-            <div class="header__links"><a href="index.html" class="logo">я аниматор на</a></div>
-            <div class="header__links"><a href="index.html" class="logo">тот еще програмест</a></div>
-            <div class="header__links"><a href="index.html" class="logo">не до ботан</a></div>
-        </li>
-        <li class="span">
-            <h2>„Человек, который совершил ошибку</h2>
-            <h2>и не исправил её, совершил ещё одну ошибку.“</h2>
-            <h1>_Конфуций</h1>
-        </li>
-    </ul>
-    <ul class="socials">
+    <section class="hero">
+        <div class="hero__content">
+          <ul class="fade-slider">
+            <li class="fade-slider__item fade-slider__item--style-tshirts fade-slider__item--visible">
+              <div class="fade-slider__text">
+                <h1 class="lined-text">
+                  <span class="lined-text__word">Всю жизнь овца волков боялась</span>
+                  <span class="lined-text__word lined-text__word--color-yellow">а сьел ее пастух</span>
+                  <span class="lined-text__word lined-text__word--color-yellow">Грузинская поговорка </span>
+                </h1>
+              </div>
+            </li>
+            <li class="fade-slider__item fade-slider__item--style-games ">
+              <div class="fade-slider__text">
+                <h1 class="lined-text lined-text--no-indent">
+                  <span class="lined-text__word">„Безвреден кто в гневе кричит“</span>
+                  <span class="lined-text__word lined-text__word--color-yellow">Бойся того,кто в гневе молчит“</span>
+                  <span class="lined-text__word">__Абай Кунанбаев__</span>
+                </h1>
+              </div>
+            </li>
+            <li class="fade-slider__item fade-slider__item--style-presents">
+              <div class="fade-slider__text">
+                <h1 class="lined-text lined-text--no-indent">
+                  <span class="lined-text__word">„Человек, который совершил ошибку</span>
+                  <span class="lined-text__word lined-text__word--color-yellow">и не исправил её, совершил ещё одну ошибку“</span>
+                  <span class="lined-text__word">___Конфуций___</span>
+                </h1>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <aside class="sidebar">
+          <a href="#" class="sidebar__hamburger">
+            <svg class="sidebar__hamburger-icon">
+              <use xlink:href="img/icons-sprite.svg#bars"></use>
+            </svg>
+          </a>
+          <div class="sidebar__header">
+            <a href="#" class="logo">
+              <img src="img/`logo.jpg" alt="" class="logo__image">
+            </a>
+              <a href="#" class="sidebar__close">
+                <svg class="sidebar__close-icon">
+                  <use xlink:href="img/icons-sprite.svg#cross"></use>
+                </svg>
+              </a>
+          </div>
+          <nav class="side-menu sidebar__menu">
+            <ul class="side-menu__list">
+              <li class="side-menu__item">
+                <a href="index.html" class="side-menu__link">Главная</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="index.html" class="side-menu__link">я аниматор на</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="index.html" class="side-menu__link">тот еще програмест</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="index.html" class="side-menu__link">не до ботан</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+         <ul class="socials">
         <li class="socials__item"><a href="https://www.instagram.com/abdimutalipovm" class="socials__link"><i class="fa-brands fa-instagram instagram"></i></a></li>
         <li class="socials__item"><a href="https://wa.me/77071530344" class="socials__link"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
         <li class="socials__item"><a href="https://github.com/SapSanshik" class="socials__link"><i class="fa-brands fa-github github"></i></a></li>
         <li class="socials__item"><a href="https://steamcommunity.com/id/000731500215/" class="socials__link"><i class="fa-brands fa-steam"></i></a></li>
     </ul>
-    </header>
+      </section>
+   
     <main class="biography">
         <div><h1 class="glitch">Привет, я Мейіржан и это мое резюме</h1></div>
         <ul class="main__content">
@@ -60,7 +112,8 @@
         </ul>
     </main>
 
-    
+    <script src="js/fade-slider.js"></script>
+    <script src="js/sidebar-menu.js"></script>
     
 </body>
 </html>
