@@ -115,7 +115,8 @@ main li {
   
   .side-menu__link {
     font-size: 20px;
-    color: #370aff;
+    background-color: rgb(10, 39, 66);
+    color: #ecd9d9;
     text-decoration: none;
     text-transform: uppercase;
     font-family: var(--titlesFont);
